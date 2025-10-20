@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <main>
+        <div class="cadastro">
+            <h1>Agendamento de Consulta</h1>
+            <form id="formAgendamento">
+                <label for="nome">Nome do paciente:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="0" max="120">
+
+                <label for="data">Data da consulta:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="especialidade">Especialidade:</label>
+                <select id="especialidade" name="especialidade">
+                    <option value="clinica_geral">Clínica Geral</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="odontologia">Odontologia</option>
+                    <option value="cardiologia">Cardiologia</option>
+                </select>
+
+                <label>Conveniado?</label>
+                <input type="radio" id="conveniado_sim" name="conveniado" value="sim"> Sim
+                <input type="radio" id="conveniado_nao" name="conveniado" value="nao"> Não
+
+                <label>Serviços adicionais:</label>
+                <input type="checkbox" id="retorno" name="servico" value="retorno"> Retorno
+                <input type="checkbox" id="exames" name="servico" value="exames"> Exames
+                <input type="checkbox" id="ultrassom" name="servico" value="ultrassom"> Ultrassom
+                <input type="checkbox" id="receita" name="servico" value="receita"> Receita Médica
+
+                <label for="sintomas">Sintomas relatados:</label>
+                <textarea id="sintomas" name="sintomas" rows="4"></textarea>
+
+                <label for="medico">Médico Responsável:</label>
+                <select id="medico" name="medico">
+                    <option value="dr_rian">Dr. Rian</option>
+                    <option value="dr_wallace">Dr. Wallace</option>
+                    <option value="dr_jailson">Dr. Jailson</option>
+                </select>
+
+                <button type="submit" id="btnSalvar">Salvar Agendamento</button>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

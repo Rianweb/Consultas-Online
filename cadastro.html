@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <div class="cadastro">
+            <h1>Cadastro</h1>
+            <form action="" id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" id="nome">
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Digite seu email" id="email">
+                <label for="datanasc">Data de Nascimento</label>
+                <input type="date" id="datanasc">
+                <label for="nivel">Escolaridade</label>
+                <select name="" id="escolaridade">
+                    <option value="ensino-medio">Ensino Médio</option>
+                    <option value="graduação">Graduação</option>
+                    <option value="pós-graduação">Pós-Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                </select>
+                <label for="genero">Gênero</label>
+                <input type="radio" name="genero" id="masculino" value="masculino">Masculino
+                <input type="radio" name="genero" id="feminino" value="feminino">Feminino
+                <label for="linguagens">Linguagens de Programação</label>
+                <input type="checkbox" name="habilidade" id="python" value="python">Python
+                <input type="checkbox" name="habilidade" id="c#" value="c#">C# 
+                <input type="checkbox" name="habilidade" id="java" value="java">java
+                <input type="checkbox" name="habilidade" id="javascript" value="javascript">javascript
+                <input type="checkbox" name="habilidade" id="php" value="php">PHP
+                <button type="submit" id="btn" onclick="salvarCadastro(event)">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+ <script src="main.js"></script>
+</body>
+</html>

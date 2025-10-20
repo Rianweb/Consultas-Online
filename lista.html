@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Agendamentos</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png"/>
+    <link rel="stylesheet" href="lista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="container cadastro">
+            <h1><i class="fa-solid fa-list-check"></i> Consultas Agendadas</h1>
+            <a href="agendamento.html" class="btn-new">
+                <i class="fa-solid fa-plus" id="btn-agend"></i> Novo Agendamento
+            </a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Especialidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-consultas">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
